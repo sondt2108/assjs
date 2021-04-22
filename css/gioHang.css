@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.gioHang {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px #ddd;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.itemGioHang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemGioHang .hinhAnh img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.itemGioHang .hinhAnh,
+.soLuong,
+.tongTien,
+.hanhDong {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.itemGioHang .gia {
+    flex: 2;
+}
+
+.itemGioHang .ten {
+    flex: 3;
+}
+
+.itemGioHang .gia .giaGoc {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: black;
+}
+
+.itemGioHang .gia .giaBan {
+    color: red;
+}
+
+.itemGioHang .hanhDong i {
+    color: black;
+}
+
+.itemGioHang .hanhDong i:hover {
+    color: red;
+    zoom: 1.05;
+}
+
+.muaHang {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid snow;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px #ddd;
+    margin-bottom: 70px;
+}
+
+.muaHang label {
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.muaHang input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.muaHang .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+
+}
+
+.muaHang .error {
+    font-size: 12px;
+    color: red;
+    font-style: normal;
+    margin-top: 5px;
+    line-height: 12px;
+    height: 12px;
+}

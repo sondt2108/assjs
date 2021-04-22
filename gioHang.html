@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Sản Phẩm Giỏ Hàng</title>
+    <script src="js/sanPham.js"></script>
+    <script src="js/gio-hang.js"></script>
+    <script src="js/hoTro.js"></script>
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gioHang.css">
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <section id="thongBao">
+
+    </section>
+    <div id="hearder-full">
+        <div class="hearder">
+            <div class="logo">
+                <a href="home.html"> <img
+                        src="https://ciaotravel.com.vn/wp-content/uploads/2015/08/logo_he_thong_24hstorevn_FULL_PNG1.png"
+                        alt="" srcset=""> </a>
+            </div>
+            <div class="seach">
+                <div class="timKiem">
+                    <input type="text" placeholder="Tìm Kiếm">
+                    <input type="button" value="Tìm">
+                </div>
+            </div>
+            <div class="hotLine">
+                Liên hệ: 19001717
+            </div>
+        </div>
+        <div class="menu">
+            <!-- menu -->
+            <nav id="nav-bar">
+                <ul class="menu-lv1">
+                    <li class="item-lv1">
+                        <a href="home.html" class="item-lv1-title">Trang Chủ</a>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="#" class="item-lv1-title">Điện thoại</a>
+                        <ul class="menu-lv2">
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">SamSung</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Iphone</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Xaomi</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Oppo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="#" class="item-lv1-title">Laptop</a>
+                        <ul class="menu-lv2">
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Asus</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Dell</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Acer</a>
+                            </li>
+                            <li class="item-lv2">
+                                <a href="#" class="item-lv2-title">Hp</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="#" class="item-lv1-title">Phụ kiện</a>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="#" class="item-lv1-title">Liên Hệ</a>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="#" class="item-lv1-title">Giới thiệu</a>
+                    </li>
+                    <li class="item-lv1">
+                        <a href="them-san-pham.html" class="item-lv1-title">Thêm sản phẩm</a>
+                    </li>
+                    <li class="item-lv1">
+                        <a href='gioHang.html'><i class="fas fa-cart-plus"></i></a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="gioHang" id="gioHang">
+        
+    </div>
+    <div class="muaHang">
+    <label for="hoTen">Họ và tên</label>
+        <input type="text" id="hoTen">
+        <lable id="thongBaoLoiChoHoTen" for="hoTen" class="error"></lable>
+
+        <label for="soDienThoai">Số điện thoại</label>
+        <input type="text" id="soDienThoai">
+        <lable id="thongBaoLoiChosoDienThoai" for="soDienThoai" class="error"></lable>
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <lable id="thongBaoLoiChoEmail" for="email" class="error"></lable>
+
+        <label for="diaChi">Địa chỉ nhận hàng</label>
+        <input type="text" id="diaChi">
+        <lable id="thongBaoLoiChoDiaChi" for="diaChi" class="error"></lable>
+
+
+        <button onclick="onclickMuaHang()" class="btn">Mua Hàng</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="service">
+            <div class="dichvu">
+                <div class="cs">
+                    <p><i class="fas fa-shipping-fast"></i> Vận chuyển miễn phí</p>
+                </div>
+                <div class="cs">
+                    <p><i class="fas fa-hand-holding-usd"></i> 20 ngày đổi trả miễn phí</p>
+                </div>
+                <div class="cs">
+                    <p><i class="far fa-address-card"></i> Bảo hành 18 tháng</p>
+                </div>
+                <div class="cs">
+                    <p><i class="fas fa-archive"></i> Bảo hiểm rơi vỡ mặt kính</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ttct">
+                <p><b>24HSTORE.VN</b></p>
+                <p>Giới thiệu công ty</p>
+                <p>Tin tức</p>
+                <p>Tuyển dụng</p>
+                <p>Liên hệ</p>
+                <p>Hệ thống cửa hàng</p>
+                <img src="https://24hstore.vn/upload_images/images/2019/09/10/linhkien.jpg" alt="">
+            </div>
+            <div class="ttct">
+                <p><b>QUY ĐỊNH - CHÍNH SÁCH</b></p>
+                <p>Chính sách bảo hành</p>
+                <p>Chính sách đổi trả</p>
+                <p>Giao hàng và thanh toán</p>
+                <p>Chính sách bảo mật</p>
+                <p>Mua trả góp</p>
+                <img src="https://24hstore.vn/upload_images/images/2019/09/10/chamsoc.jpg" alt="">
+            </div>
+            <div class="ttct">
+                <p><b>HỖ TRỢ KHÁCH HÀNG </b> </p>
+                <p>Tổng Đài Mua Hàng:</p>
+                <p><i class="fas fa-phone-alt"></i> 19000351 - 0988242424 </p>
+                <p>Tổng Đài Sửa Chữa/ Bảo Hành:</p>
+                <p><i class="fas fa-phone-alt"></i> 19000213 - 0788242424</p>
+                <p>Phản Ánh Chất Lượng:</p>
+                <p><i class="fas fa-phone-alt"></i> 0985242424</p>
+                <p><i class="fab fa-facebook"></i></p>
+            </div>
+            <div class="ttct">
+                <p><b>HỆ THỐNG SHOWROOM</b> </p>
+                <p><i class="fas fa-map-marker-alt"> </i> 413 Hoàng Văn Thụ, P.2, Q. Tân Bình</p>
+                <p><i class="fas fa-map-marker-alt"> </i> 256 Võ Văn Ngân, Bình Thọ, Thủ Đức </p>
+                <p><i class="fas fa-map-marker-alt"> </i> 389 Quang Trung, P.10, Q. Gò Vấp</p>
+                <p><i class="fas fa-map-marker-alt"> </i> 418 Nguyễn Trãi, P.8, Q.5</p>
+                <p><i class="fas fa-map-marker-alt"> </i> 652 3 Tháng 2, P.14, Q.10</p>
+                <p><i class="fas fa-map-marker-alt"> </i> 249 Trần Quang Khải, P. Tân Định, Q.1</p>
+                <p><b>Tâm Sửa Chữa & Bảo Hành
+                        Bệnh Viện Điện Thoại 24h</b></p>
+                <p><i class="fas fa-map-marker-alt"> </i> 1114 3 Tháng 2, P.12, Q11, TPHCM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        hienThiGioHang();
+
+
+
+
+        function chuyenDoiDanhSachItemGioHangThanhHTML(danhSachItemGioHang) {
+            var HTMLTong = '';
+            for (var i = 0; i < danhSachItemGioHang.length; i++) {
+                var HTML = chuyenDoiDoiTuongItemGioHang(danhSachItemGioHang[i]);
+                HTMLTong = HTMLTong + HTML;
+            }
+            return HTMLTong;
+        }
+
+        function hienThiGioHang() {
+            var danhSachItemGioHang = layGioHangTuLocalStorage();
+
+            var HTML = chuyenDoiDanhSachItemGioHangThanhHTML(danhSachItemGioHang);
+
+            var nodeGioHang = document.getElementById('gioHang');
+            nodeGioHang.innerHTML = HTML;
+        }
+
+
+
+
+        function onclickMuaHang() {
+            if (kiemTraFromDangKi() == true) {
+                
+                console.log('thực hiện đăng nhập');
+
+            }
+        }
+
+
+        function kiemTraFromDangKi() {
+            var hopLe = true;
+            //truy cập node để lấy dữ liệu
+            var nodeHoTen = document.getElementById('hoTen');
+            var nodeSoDienThoai = document.getElementById('soDienThoai');
+            var nodeEmail = document.getElementById('email');
+            var nodeDiaChi = document.getElementById('diaChi');
+            var hoTen = nodeHoTen.value;
+            var soDienThoai = nodeSoDienThoai.value;
+            var email = nodeEmail.value;
+            var diaChi = nodeDiaChi.value;
+
+            var nodeThongBaoLoiHoTen = document.getElementById('thongBaoLoiChoHoTen');
+            var nodeThongBaoLoiChoSoDienThoai = document.getElementById('thongBaoLoiChosoDienThoai');
+            var nodeThongBaoLoiChoEmail = document.getElementById('thongBaoLoiChoEmail');
+            var nodeThongBaoLoiChoDiaChi = document.getElementById('thongBaoLoiChoDiaChi');
+
+            nodeThongBaoLoiHoTen.innerHTML = '';
+            nodeThongBaoLoiChoSoDienThoai.innerHTML = '';
+            nodeThongBaoLoiChoEmail.innerHTML = '';
+            nodeThongBaoLoiChoDiaChi.innerHTML = '';
+            
+            //Ktra xem dữ liệu có hợp lệ
+            if (hoTen == null || hoTen.length <= 0) {
+                nodeThongBaoLoiHoTen.innerHTML = 'Họ tên không hợp lệ!';
+                hopLe = false;
+            }
+            if (soDienThoai == null || soDienThoai.length <= 0) {
+                nodeThongBaoLoiChoSoDienThoai.innerHTML = 'Số điện thoại không hợp lệ!';
+                hopLe = false;
+            }
+            if (email == null || email.length <= 0) {
+                nodeThongBaoLoiChoEmail.innerHTML = 'Email không hợp lệ!';
+                hopLe = false;
+            }
+            if (diaChi == null || diaChi.length <= 0) {
+                nodeThongBaoLoiChoDiaChi.innerHTML = 'Địa chỉ không hợp lệ!';
+                hopLe = false;
+            }
+            
+            return hopLe;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
